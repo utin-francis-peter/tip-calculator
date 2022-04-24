@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/style.css" />
+		<title>Frontend Mentor | Tip calculator app</title>
+	</head>
+
+	<body>
+		<header>
+			<img src="/images/logo.svg" alt="" />
+		</header>
+		<!-- logo area -->
+
+		<div class="parent-calculator-container absolute-center">
+			<div class="userInput-calculator-interface">
+				<div>
+					<h5>Bill</h5>
+					<div class="bill-container justify-center">
+						<img src="/images/icon-dollar.svg" alt="" id="icon" />
+						<input type="text" placeholder="0" class="bill-input" />
+					</div>
+				</div>
+				<!-- for user to input bill amount/value -->
+
+				<div class="userSelection-area desktop">
+					<h5>Select Tip %</h5>
+					<div class="bill-percentage-container">
+						<div class="tip-percentage">
+							<p class="absolute-center"><span class="percentage">5</span>%</p>
+						</div>
+						<div class="tip-percentage">
+							<p class="absolute-center"><span class="percentage">10</span>%</p>
+						</div>
+						<div class="tip-percentage">
+							<p class="absolute-center"><span class="percentage">15</span>%</p>
+						</div>
+					</div>
+					<div class="bill-percentage-container">
+						<div class="tip-percentage">
+							<p class="absolute-center"><span class="percentage">25</span>%</p>
+						</div>
+						<div class="tip-percentage">
+							<p class="absolute-center"><span class="percentage">50</span>%</p>
+						</div>
+						<div class="tip-percentage">
+							<input
+								type="text"
+								name=""
+								placeholder="Custom"
+								class="custom-input custom-percentage"
+							/>
+							<!-- for user to manually enter the value for tip percentage -->
+						</div>
+					</div>
+				</div>
+				<!-- Desktop bill percentage layout -->
+
+				<div class="userSelection-area mobile">
+					<h5>Select Tip %</h5>
+					<div class="bill-percentage-container">
+						<div class="tip-percentage">
+							<p class="absolute-center"><span class="percentage">5</span>%</p>
+						</div>
+						<div class="tip-percentage">
+							<p class="absolute-center"><span class="percentage">10</span>%</p>
+						</div>
+					</div>
+					<div class="bill-percentage-container">
+						<div class="tip-percentage">
+							<p class="absolute-center"><span class="percentage">15</span>%</p>
+						</div>
+						<div class="tip-percentage">
+							<p class="absolute-center"><span class="percentage">25</span>%</p>
+						</div>
+					</div>
+					<div class="bill-percentage-container">
+						<div class="tip-percentage">
+							<p class="absolute-center"><span class="percentage">50</span>%</p>
+						</div>
+						<div class="tip-percentage">
+							<input
+								type="text"
+								name=""
+								placeholder="Custom"
+								class="custom-input custom-percentage"
+							/>
+							<!-- for user to manually enter the value for tip percentage -->
+						</div>
+					</div>
+				</div>
+				<!-- Mobile bill percentage layout -->
+
+				<div class="justify-center little-mb">
+					<h5>Number of People</h5>
+					<h5 class="warning hidden">Can't be zero</h5>
+				</div>
+				<div class="people-container justify-center">
+					<img src="/images/icon-person.svg" alt="" id="icon" />
+					<input type="text" placeholder="0" class="people-input" />
+				</div>
+				<!-- for user to enter number of people ordering -->
+			</div>
+			<!-- interface where user enters or selects a value for computation -->
+
+			<div class="feedback-calculator-interface">
+				<div class="tipOutput-area justify-center">
+					<div class="title-area">
+						<h4>Tip Amount</h4>
+						<p class="subtitle">/ person</p>
+					</div>
+					<div class="tip-output justify-center">
+						<h1 id="dollar-sign">$</h1>
+						<h1 class="tipAmountPerPerson">0.00</h1>
+					</div>
+				</div>
+				<!-- outputs calculated tip value per person to user -->
+
+				<div class="totalOutput-area justify-center">
+					<div class="title-area">
+						<h4>Total</h4>
+						<p class="subtitle">/ person</p>
+					</div>
+					<div class="total-output justify-center">
+						<h1 id="dollar-sign">$</h1>
+						<h1 class="totalPerPerson">0.00</h1>
+					</div>
+				</div>
+				<!-- outputs calculated total value per person to user -->
+				<button class="reset">RESET</button>
+			</div>
+			<!-- interface where user sees computed result of entered or selected value -->
+		</div>
+
+		<script src="/script.js"></script>
+	</body>
+</html>
