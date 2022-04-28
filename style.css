@@ -210,7 +210,7 @@ input {
 
 	.parent-calculator-container {
 		width: 100%;
-		margin-top: 50px;
+		margin-top: 80px;
 		flex-direction: column;
 		height: auto;
 		box-shadow: none;
@@ -226,9 +226,12 @@ input {
 	.userInput-calculator-interface {
 		width: 100%;
 	}
+	.feedback-calculator-interface {
+		margin-top: 0.75em;
+	}
 
 	.tip-percentage {
-		width: 50%;
+		width: 45%;
 		height: 50px;
 	}
 
