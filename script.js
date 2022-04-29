@@ -74,8 +74,7 @@ for (let i = 0; i < percentage.length; i++) {
 			// invokes removeWarningStyles function since condition for computation execution is met
 			removeWarningStyles();
 		} else {
-			tipAmount.textContent = "0.00";
-			totalAmount.textContent = "0.00";
+			resetOutputValues();
 			addWarningStyles();
 		}
 	});
